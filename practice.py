@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------- #
-
-# Question 1
+#																			#
+# Question 1																#
 # ------------------------------------------------------------------------- #
 def min_val(a, b):
 	"""
@@ -57,6 +57,7 @@ def weather(temp):
 	"""
 	For temperatures less than 60 return "cold", between 60 and 80 return
 	"warm", and greater than 80 return "hot"
+
 	Args:
 		temp: number, represents temperature
 
@@ -64,11 +65,36 @@ def weather(temp):
 		a description of the weather based off temperature
 	"""
 	# FIXME
+	if ________:
+		return ________
+	elif ________:
+		return ________
+	else:
+		return ________
+
+def weather_2(temp, hum):
+	"""
+	For temperatures less than 60 return "cold", between 60 and 80 return
+	"warm", and greater than 80 return "hot".
+	For humidities in the range 0 up to 0.2 return "dry" if "cold" or "warm"
+	and "arid" if "hot", in the range 0.2 to 0.5 return "damp" if "cold" and
+	"humid" if "warm" or "hot", and greater than 0.5 return "rainy".
+
+	Args:
+		temp: number representing temperature
+		hum: number representing humidity, ranged from 0 to 1
+
+	Returns:
+		a single string describing the weather following the format of
+		"hot and dry"
+	"""
+	assert hum >= 0 and hum < 1
+	# FIXME
 	________
 
 # ------------------------------------------------------------------------- #
-
-# Question 2
+#																			#
+# Question 2																#
 # ------------------------------------------------------------------------- #
 def skip_range(start, end):
 	"""
@@ -123,12 +149,10 @@ def power_range(start, end, n):
 	# FIXME
 	________
 
-
 # ------------------------------------------------------------------------- #
-
-# Question 3
+#																			#
+# Question 3																#
 # ------------------------------------------------------------------------- #
-
 def difference(lst):
 	"""
 	Creates a list of the differences of each item in the list, with
@@ -201,8 +225,8 @@ def golden_ratio_approx(n):
 	________
 
 # ------------------------------------------------------------------------- #
-
-# Question 4
+#																			#
+# Question 4																#
 # ------------------------------------------------------------------------- #
 def travel(destinations, interested):
 	"""
@@ -250,6 +274,90 @@ def max_val(lst):
 
 	Returns:
 		the highest valued number in the provided list
+	"""
+	# FIXME
+	________
+
+# ------------------------------------------------------------------------- #
+#																			#
+# Question 5																#
+# ------------------------------------------------------------------------- #
+def zip_up(lst1, lst2):
+	"""
+	Implements the zip function, which refers to the process of making
+	a list of lists with each inner list cotaining the items from lst1 and
+	lst2 at the index of this inner list.
+	For example: zip_up([1, 2, 3, 4, 5], [10, 20, 30, 40, 50]) returns
+		[[1, 10], [2, 20], [3, 30], [4, 40], [5, 50]].
+	Assume that ls1 and lst2 have the same lengths.
+
+	Args:
+		lst1: a list
+		lst2: a list
+
+	Returns:
+		a zipped up list of lists
+	"""
+	assert len(lst1) == len(lst2)
+
+	# FIXME
+	________
+
+def zip_down(lst):
+	"""
+	Unzips a list of lists.
+	For example: zip_down([[1, 10], [2, 20], [3, 30], [4, 40], [5, 50]])
+		returns two lists: [1, 2, 3, 4, 5] and [10, 20, 30, 40, 50].
+	You can assume that each list with in the list only has two items.
+
+	Args:
+		lst: a list of lists
+
+	Returns:
+		two unzipped lists
+	"""
+	for lst_item in lst:
+		assert isinstance(lst_item, list)
+		assert len(lst_item) == 2
+
+	# FIXME
+	________
+
+# ------------------------------------------------------------------------- #
+#																			#
+# Question 6: Extra Problems												#
+# ------------------------------------------------------------------------- #
+def n_zip_up(*lsts):
+	"""
+	Zips up all the lists passed in as lsts. If lsts only contains two lists,
+	this function has the same effect as zip_up. Once again, assume that all
+	lists in lst have the same length.
+
+	Args:
+		lst: a list of lists to be zipped
+
+	Returns:
+		a zipped up list of lists
+	"""
+	for lst in lsts:
+		assert len(lst) == len(lsts[0])
+
+	# FIXME
+	________
+
+def n_zip_down(lst):
+	"""
+	Zips down all the lists contained in lst. If there are only two values
+	in each list inside of the passed in list, this function will have the
+	same effect as zip_down.
+
+	Args:
+		lst: a list of lists, with each list item containing the same number
+		of items as the other lists
+
+	Returns:
+		a list of unzipped lists; this list will contain n lists if there
+		were n values in each zipped list
 	"""
 	# FIXME
 	________

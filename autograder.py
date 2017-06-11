@@ -22,6 +22,29 @@ question_inputs = {
 			[(1, 2), 2],
 			[(0, 0), 0],
 			[(-4, -6), -4]
+		],
+		"a_plus_abs_b": [
+			[(1, 2), 3],
+			[(-3, -3), 0],
+			[(4, -2), 6]
+		],
+		"weather": [
+			[(40,), "cold"],
+			[(61,), "warm"],
+			[(60,), "warm"],
+			[(81,), "hot"],
+			[(80,), "hot"]
+		],
+		"weather_2":[
+			[(40, 0.1), "cold and dry"],
+			[(45, 0.3), "cold and damp"],
+			[(50, 0.5), "cold and rainy"],
+			[(60, 0.19), "warm and dry"],
+			[(60, 0.2), "warm and humid"],
+			[(70, 0.7), "warm and rainy"],
+			[(80, 0.1), "hot and arid"],
+			[(90, 0.4), "hot and humid"],
+			[(100, 0.9), "hot and rainy"]
 		]
 	}
 }
