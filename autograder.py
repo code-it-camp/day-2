@@ -12,7 +12,18 @@ Dictionary of allowed question test requests
 		this function and an expected output
 """
 question_inputs = {
-	
+	"q1": {
+		"min_val": [
+			[(1, 2), 1],
+			[(0, 0), 0],
+			[(-4, -6), -6]
+		],
+		"max_val": [
+			[(1, 2), 2],
+			[(0, 0), 0],
+			[(-4, -6), -4]
+		]
+	}
 }
 
 def run_test(questions):
