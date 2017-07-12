@@ -184,7 +184,7 @@ def factorial(n):
 	"""
 	# FIXME
 	product = ________
-	for ________:
+	for ________ in ________:
 		________
 	return ________
 
@@ -244,7 +244,7 @@ def travel(destinations, interested):
 		string, the first destination user is interested in, otherwise None
 	"""
 	# FIXME
-	for ________:
+	for ________ in ________:
 		if ________:
 			return ________
 
